@@ -2,20 +2,16 @@ package org.example;
 
 public class FinalQueryRequest {
 
-    private String finalQuery;
+    private String query;
 
     public FinalQueryRequest() {
     }
 
-    public FinalQueryRequest(String finalQuery) {
-        this.finalQuery = finalQuery;
+    public String getQuery() {
+        return query;
     }
 
-    public String getFinalQuery() {
-        return finalQuery;
-    }
-
-    public void setFinalQuery(String finalQuery) {
-        this.finalQuery = finalQuery;
+    public void setQuery(String query) {
+        this.query = query;
     }
 }

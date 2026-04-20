@@ -1,7 +1,5 @@
 package org.example;
 
-
-
 public class WebhookResponse {
 
     private String webhook;

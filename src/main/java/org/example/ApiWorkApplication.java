@@ -9,18 +9,22 @@ import org.springframework.context.annotation.Bean;
 public class ApiWorkApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApiWorkApplication.class, args);
+
+        SpringApplication.run(ApiWorkApplication.class,args);
+
+
     }
 
     @Bean
-    public CommandLineRunner run(ApiService apiService) {
-
+    public CommandLineRunner run(ApiService apiService)
+    {
         return new CommandLineRunner() {
-
             @Override
             public void run(String... args) throws Exception {
                 apiService.executeFlow();
             }
         };
     }
+
+
 }
