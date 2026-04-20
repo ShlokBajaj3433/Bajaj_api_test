@@ -2,25 +2,34 @@ package org.example;
 
 public class WebhookRequest {
 
-    private String webhook;
-    private String accessToken;
+    private String name;
+    private String regNo;
+    private String email;
 
     public WebhookRequest() {
     }
 
-    public String getWebhook() {
-        return webhook;
+    public String getName() {
+        return name;
     }
 
-    public void setWebhook(String webhook) {
-        this.webhook = webhook;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getAccessToken() {
-        return accessToken;
+    public String getRegNo() {
+        return regNo;
     }
 
-    public void setAccessToken(String accessToken) {
-        this.accessToken = accessToken;
+    public void setRegNo(String regNo) {
+        this.regNo = regNo;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
